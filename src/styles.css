@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  border: 0;
+}
+:root {
+  --blue: #2f0ad3;
+  --light-purple: #8e58f4;
+  --puple: #7644bc;
+  --dark-purple: #6941a8;
+  --gray-blue: #425fad;
+}
+/* Define o tamanho da fonte base para a tela padrão e telas menores */
+html {
+  font-size: 65%; /* 65% da fonte padrão */
+}
+
+/* Define o tamanho da fonte para o corpo do documento */
+body {
+  font-size: 1.6rem; /* 1.6 rem = 16px (assumindo que 1rem é igual a 10px) */
+ 
+}
+
+/* Aplique ajustes de tamanho da fonte para diferentes larguras de tela */
+@media (max-width: 480px) {
+  html {
+    font-size: 56%; /* 58% da fonte padrão */
+  }
+  body{
+    background-color: #7644bc;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 58%; /* 60% da fonte padrão */
+  }
+  body{
+    background-color: #1eff00;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 60%; /* 62% da fonte padrão */
+  }
+  body{
+    background-color: #363636;
+}
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    html {
+      font-size: 62%; /* 62% da fonte padrão */
+    }
+    body{
+      background-color: #363636;
+  }
+  }
+@media (min-width: 1281px) {
+  html {
+    font-size: 65%; /* 65% da fonte padrão */
+  }
+  body{
+    background-color: #f80000;
+}
+}

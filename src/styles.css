@@ -10,6 +10,8 @@
   --puple: #7644bc;
   --dark-purple: #6941a8;
   --gray-blue: #425fad;
+  --gray: #2e2e2e;
+  --dark-gray:#1f1f1f;
 }
 /* Define o tamanho da fonte base para a tela padrão e telas menores */
 html {
@@ -37,7 +39,7 @@ body {
     font-size: 58%; /* 60% da fonte padrão */
   }
   body{
-    background-color: #1eff00;
+    background-color: #363636;
 }
 }
 
@@ -62,6 +64,6 @@ body {
     font-size: 65%; /* 65% da fonte padrão */
   }
   body{
-    background-color: #f80000;
+    background-color: #363636;
 }
 }

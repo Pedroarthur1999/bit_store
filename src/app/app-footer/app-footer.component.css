@@ -1,0 +1,45 @@
+.footer__container {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;  
+  color: white;
+}
+.footer__content{
+    display: flex;    
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+}
+.footer__title {
+    
+}
+.footer__text-about {
+}
+
+.footer__contact {
+}
+
+.footer__contact li {
+  list-style: none;
+}
+
+.footer__contact a {
+}
+
+i {
+  color: white;
+}
+
+.footer__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-gray);
+    padding: 20px;
+}
+.footer__logo h3{
+    
+}

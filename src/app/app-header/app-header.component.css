@@ -2,14 +2,15 @@
   width: 100vw;
   height: 10rem;
   display: flex;
-  background-color: var(--gray-blue);
-}
+  background: rgb(228,0,0);
+  background: linear-gradient(77deg, rgba(228,0,0,1) 0%, rgba(223,1,1,1) 4%, rgba(167,10,10,1) 41%, rgba(177,0,0,1) 100%);
+  }
 
 .main-header__title {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 4rem;
   font-size: 4rem;
 }
 .main-header__title span {
@@ -48,9 +49,13 @@
     align-items: center;
     margin: 0px 20px 0px 0px;
 }
+.search-bar input{
+  height: 25px;
+}
 .fa-magnifying-glass.search{
     background-color: var(--blue);
     color: white;   
+    padding: 7px;
 }
 .btn-icon{
     background-color: var(--blue);

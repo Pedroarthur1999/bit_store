@@ -3,6 +3,7 @@
 * {
   margin: 0;
   border: 0;
+  padding: 0;
 }
 :root {
   --blue: #2f0ad3;
@@ -12,6 +13,7 @@
   --gray-blue: #425fad;
   --gray: #2e2e2e;
   --dark-gray:#1f1f1f;
+  
 }
 /* Define o tamanho da fonte base para a tela padrão e telas menores */
 html {
@@ -21,16 +23,22 @@ html {
 /* Define o tamanho da fonte para o corpo do documento */
 body {
   font-size: 1.6rem; /* 1.6 rem = 16px (assumindo que 1rem é igual a 10px) */
- 
-}
+  overflow-x: hidden; 
+  
 
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Aplique ajustes de tamanho da fonte para diferentes larguras de tela */
 @media (max-width: 480px) {
   html {
     font-size: 56%; /* 58% da fonte padrão */
   }
   body{
-    background-color: #7644bc;
+    
 }
 }
 
@@ -39,7 +47,7 @@ body {
     font-size: 58%; /* 60% da fonte padrão */
   }
   body{
-    background-color: #363636;
+    
 }
 }
 
@@ -56,7 +64,7 @@ body {
       font-size: 62%; /* 62% da fonte padrão */
     }
     body{
-      background-color: #363636;
+      
   }
   }
 @media (min-width: 1281px) {
@@ -64,6 +72,9 @@ body {
     font-size: 65%; /* 65% da fonte padrão */
   }
   body{
-    background-color: #363636;
+    
 }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

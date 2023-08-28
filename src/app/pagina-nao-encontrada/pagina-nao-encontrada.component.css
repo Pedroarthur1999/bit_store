@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    color: white;
+    height: 40rem;
+    justify-content: center;
+}
+.container i{
+    font-size: 10rem;
+}

@@ -4,12 +4,19 @@
   </div>
 
   <div class="product__information">
-    <h2 class="product__name">{{product?.name}}</h2>
-    <h3 class="product__description">{{product?.description}}</h3>
-    <h3 class="product__price">{{product?.price | currency: 'BRL'}}</h3>
+    <h2 class="product__name">{{ product?.name }}</h2>
+    <h3 class="product__description">{{ product?.description }}</h3>
+    <h3 class="product__price">{{ product?.price | currency : "BRL" }}</h3>
     <p>Estoque disponivel</p>
-    <label for="quantidade">Quantidade: <input type="number" />und(s) </label>
-    <p >Disponivel: {{product?.quantidade}}</p>
-    <button type="button">Adicionar ao carrinho!</button>
+    <label for="quantidades">
+      Quantidade: <input type="number" [(ngModel)]="quantidades" />und(s)
+    </label>
+    <p>Disponivel:</p>
+    <button
+      type="button"
+      (click)="adicionarCarrinho('Produto adicionado ao carrinho!')"
+    >
+      Adicionar ao carrinho!
+    </button>
   </div>
 </section>

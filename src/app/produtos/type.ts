@@ -7,3 +7,9 @@ export interface Produtos {
   priceDescription: string;
   quantidade: number;
 }
+
+export interface IProdutoCarrinho extends Produtos{
+
+  quantidadeCarrinho: number ;
+
+}

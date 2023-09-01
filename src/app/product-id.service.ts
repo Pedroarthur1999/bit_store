@@ -4,6 +4,8 @@ import { Produtos } from './produtos/type';
 @Injectable({
   providedIn: 'root',
 })
+
+
 export class ProductIdService {
   products: Produtos[] = [
     {
@@ -13,7 +15,7 @@ export class ProductIdService {
       description: 'Mouse perfeito para as suas jogatinas!',
       price: 329,
       priceDescription: 'A vista',
-      quantidade: 10,
+      quantidade: 0,
     },
     {
       id: 2,
@@ -22,7 +24,7 @@ export class ProductIdService {
       description: 'Mouse sem fio!',
       price: 229,
       priceDescription: 'A vista',
-      quantidade: 10,
+      quantidade: 0,
     },
     {
       id: 3,
@@ -31,7 +33,7 @@ export class ProductIdService {
       description: 'Mouse com 6400 de DPI!',
       price: 129,
       priceDescription: 'A vista',
-      quantidade: 10,
+      quantidade: 0,
     },
     {
       id: 4,
@@ -40,7 +42,7 @@ export class ProductIdService {
       description: 'Teclado sem fio.',
       price: 239,
       priceDescription: 'A vista',
-      quantidade: 10,
+      quantidade: 0,
     },
     {
       id: 5,
@@ -49,7 +51,7 @@ export class ProductIdService {
       description: 'Teclado com keycaps double shot!',
       price: 329,
       priceDescription: 'A vista',
-      quantidade: 10,
+      quantidade: 0,
     },
     {
       id: 6,
@@ -58,7 +60,7 @@ export class ProductIdService {
       description: 'Fone sem fio APPLE',
       price: 459.99,
       priceDescription: 'A vista',
-      quantidade: 10,
+      quantidade: 0,
     },
     {
       id: 7,
@@ -67,7 +69,7 @@ export class ProductIdService {
       description: 'Fone JBL com áudio stereo ',
       price: 239.99,
       priceDescription: 'A vista',
-      quantidade: 10,
+      quantidade: 0,
     },
     {
       id: 8,
@@ -76,7 +78,7 @@ export class ProductIdService {
       description: 'Combo de placas GTX 1080ti',
       price: 5530,
       priceDescription: 'A vista',
-      quantidade: 5,
+      quantidade: 0,
     },
     {
       id: 9,
@@ -85,7 +87,7 @@ export class ProductIdService {
       description: 'APPLE computers',
       price: 12999,
       priceDescription: 'A vista',
-      quantidade: 2,
+      quantidade: 0,
     },
     {
       id: 10,
@@ -94,7 +96,7 @@ export class ProductIdService {
       description: 'Equipado com intel xeon ',
       price: 8999,
       priceDescription: 'A vista',
-      quantidade: 3,
+      quantidade: 0,
     },
     {
       id: 11,
@@ -103,7 +105,7 @@ export class ProductIdService {
       description: 'Notebook Full HD de 15,6 pol.',
       price: 3330,
       priceDescription: 'A vista',
-      quantidade: 4,
+      quantidade: 0,
     },
 
     {
@@ -113,7 +115,7 @@ export class ProductIdService {
       description: 'Ryzen 7 3700X ',
       price: 899,
       priceDescription: 'A vista',
-      quantidade: 5,
+      quantidade: 0,
     },
   ];
   constructor() {}

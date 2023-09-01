@@ -17,11 +17,13 @@
 }
 .product__photo {
   display: flex;
+  border-radius: 5px;
 }
 
 .product__photo img {
   width: 25rem;
   height: 25rem;
+  border-radius: 5px;
 }
 .product__information {
   display: flex;

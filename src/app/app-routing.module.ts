@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { CartComponent } from './cart/cart.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path:"", redirectTo:"produtos", pathMatch: "full"},
+  {path:"", redirectTo:"home", pathMatch: "full"},
+  {path:"home", component: HomeComponent},
   {
     path: 'produtos',
     loadChildren: () =>

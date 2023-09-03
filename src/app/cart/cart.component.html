@@ -1,21 +1,47 @@
 <section class="cart">
+  <h2 class="cart__title">Carrinho</h2>
 
-<h2 class="cart__title">Carrinho</h2>
-<div *ngIf="itensCarrinho.length > 0; else semProduto">
+  <div class="cart-content" *ngIf="itensCarrinho.length > 0; else semProduto">
     <ul class="cart__information">
-        <li *ngFor="let itemCarrinho of itensCarrinho">
-            <img [src]="itemCarrinho.image" alt="">
-            <p>{{itemCarrinho.name}}</p>
-            <p>Preço: <span class="price-value">{{itemCarrinho.price | currency: 'BRL'}}</span></p>
-            <label>Quantidade:
-                <input type="number" [(ngModel)]="itemCarrinho.quantidadeCarrinho" (change)="calculTotal()">
-            </label>
-            <button type="button" class="remove-button" (click)="deleteItem(itemCarrinho.id)"><i class="fa-solid fa-xmark"></i></button>
-        </li>
+      <li *ngFor="let itemCarrinho of itensCarrinho">
+        <img [src]="itemCarrinho.image" alt="" />
+        <p>{{ itemCarrinho.name }}</p>
+        <p>
+          Preço:
+          <span class="price-value">{{
+            itemCarrinho.price | currency : "BRL"
+          }}</span>
+        </p>
+        <label
+          >Quantidade:
+          <input
+            type="number"
+            [(ngModel)]="itemCarrinho.quantidadeCarrinho"
+            (change)="calculTotal()"
+          />
+        </label>
+        <button
+          type="button"
+          class="remove-button"
+          (click)="deleteItem(itemCarrinho.id)"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </li>
     </ul>
-</div>
-<h2 class="cart-total">Total:{{total | currency: 'BRL'}}</h2>
-<button type="button" class="buy-button">Comprar</button>
+  </div>
+
+  <div class="buy__container">
+      <div class="buy-content">
+          <h2 class="cart-total">Total: <span>{{ total | currency : "BRL" }}</span></h2>
+          <button type="button" class="buy-button">Comprar</button>
+      </div>
+  </div>
 </section>
 
-<ng-template #semProduto>Nenhum produto foi adicionado ao carrinho</ng-template>
+<ng-template #semProduto>
+  <div class="template__container">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <p>Nenhum produto foi adicionado ao carrinho</p>
+  </div>
+</ng-template>

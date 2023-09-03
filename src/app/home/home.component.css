@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+.home__page {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url("/assets/5d890cd1f07cc.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.253);
+
+}
+.home__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  flex-flow: row wrap;
+  padding: 50px 10px;
+}
+
+.home__container-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-flow: row wrap;
+}
+.home-information {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.home-information img {
+  width: 50rem;
+  padding: 20px;
+}
+
+.home-title {
+  font-size: 10rem;
+  color: white;
+  font-family: "Black Ops One", cursive;
+}
+
+.product-image {
+  transition: all 0.3s ease;
+}
+.product-image img {
+  border-radius: 50%;
+}
+.product-image:nth-child(1) img{
+    background: white;
+}
+.product-image:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.underline {
+  text-decoration: underline;
+  color: white;
+}

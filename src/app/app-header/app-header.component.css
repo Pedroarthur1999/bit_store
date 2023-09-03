@@ -1,12 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
 .main-header {
   width: 100vw;
   height: 10rem;
   display: flex;
-  background: rgb(228,0,0);
-  background: linear-gradient(77deg, rgba(228,0,0,1) 0%, rgba(223,1,1,1) 4%, rgba(167,10,10,1) 41%, rgba(177,0,0,1) 100%);
+  background: rgb(0, 19, 133);
+  background: linear-gradient(
+    77deg,
+    rgba(0, 19, 133, 1) 0%,
+    rgba(34, 0, 170, 1) 32%,
+    rgba(34, 37, 100, 1) 74%,
+    rgba(4, 9, 97, 1) 100%
+  );
   justify-content: center;
   align-items: center;
-  }
+
+}
 
 .main-header__title {
   display: flex;
@@ -14,10 +23,13 @@
   align-items: center;
   margin-left: 4rem;
   font-size: 4rem;
+  font-family: 'Share Tech Mono', monospace;
+  -webkit-text-stroke: .8px white;
 }
 .main-header__title span {
   text-transform: uppercase;
   color: white;
+  
 }
 .main-header__menu {
   display: flex;
@@ -31,7 +43,8 @@
   display: flex;
   flex-direction: row;
 }
-.main-header__menu li, li {
+.main-header__menu li,
+li {
   list-style: none;
 }
 .main-header__menu a {
@@ -39,46 +52,45 @@
   text-decoration: none;
   padding: 10px;
   text-transform: uppercase;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
-.main-header__menu a:hover{
-    color: rgb(180, 180, 180);
-    transition: all .2s ease-in-out;
+.main-header__menu a:hover {
+  color: rgb(180, 180, 180);
+  transition: all 0.2s ease-in-out;
 }
-.badge__container{
+.badge__container {
   display: flex;
   align-items: center;
   position: relative;
-  right: 15px;
-  flex-direction: row ;
+  right: 35px;
+  flex-direction: row;
   width: fit-content;
 }
-.badge__container i{
+.badge__container i {
   color: white;
 }
-.cart__container{
+.cart__container {
   display: flex;
   flex-direction: row;
   width: max-content;
 }
-.search-bar{
-    display: flex;
-    align-items: center;
-    margin: 0px 10px 0px 0px;
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 0px;
 }
-.search-bar input{
+.search-bar input {
   height: 25px;
 }
-.fa-magnifying-glass.search{
-    background-color: var(--blue);
-    color: white;   
-    padding: 7px;
+.fa-magnifying-glass.search {
+  background-color: var(--blue);
+  color: white;
+  padding: 7px;
 }
-.btn-icon{
-    background-color: var(--blue);
+.btn-icon {
+  background-color: var(--blue);
 }
-.badge-cart{
+.badge-cart {
   width: 10px;
   height: 10px;
   background-color: white;
@@ -87,4 +99,5 @@
   padding: 7px;
   margin-left: 3px;
   font-weight: 800;
+  text-decoration: none;
 }

@@ -24,9 +24,11 @@ html {
 body {
   font-size: 1.6rem; /* 1.6 rem = 16px (assumindo que 1rem é igual a 10px) */
   overflow-x: hidden; 
-  
+  width: 100vw;  
 
+  
 }
+
 .container{
   display: flex;
   align-items: center;

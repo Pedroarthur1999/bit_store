@@ -10,20 +10,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CartComponent } from './cart/cart.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
+import { ProdutosModule } from './produtos/produtos.module';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
     AppFooterComponent,
     PaginaNaoEncontradaComponent,
-    CartComponent,   
+    CartComponent,
+    HomeComponent,   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSnackBarModule,
-    FormsModule
+    FormsModule,
+    ProdutosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

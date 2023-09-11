@@ -12,6 +12,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import { ProdutosModule } from './produtos/produtos.module';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     AppFooterComponent,
     PaginaNaoEncontradaComponent,
     CartComponent,
-    HomeComponent,   
+    HomeComponent,
+    ContactComponent,   
   ],
   imports: [
     BrowserModule,

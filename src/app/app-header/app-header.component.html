@@ -1,20 +1,24 @@
 <header class="main-header">
-  <h1 class="main-header__title"><span>Bit </span>Store</h1>
+  <h2 class="main-header__title"><span>Bit </span>Store</h2>
   <nav class="main-header__menu">
     <ul>
       <li><a routerLink="/home">Home</a></li>
       <li><a routerLink="/produtos">Produtos</a></li>
-      <li><a routerLink="/Contato">Contato</a></li>
-      
+      <li><a routerLink="/contato">Contato</a></li>
     </ul>
   </nav>
   <div class="badge__container">
-    <form action="" class="search-bar">
-      <input type="text">
-      <button type="button" class="btn-icon"><i class="fa-solid fa-magnifying-glass search"></i></button>
+    <form class="search-bar" >
+      <input type="text" name="description" [(ngModel)]="search">
+      <button type="submit" class="btn-icon" (click)="onSubmit(search)">
+        <i class="fa-solid fa-magnifying-glass search"></i>
+      </button>
     </form>
-    <div class="cart__container"> 
-      <a routerLink="/cart"><i class="fa-solid fa-cart-shopping"></i><span class="badge-cart">{{cartService.obtainCart().length}}</span>
-      </a></div>
+    <div class="cart__container">
+      <a routerLink="/cart"
+        ><i class="fa-solid fa-cart-shopping"></i
+        ><span class="badge-cart">{{ cartService.obtainCart().length }}</span>
+      </a>
+    </div>
   </div>
 </header>

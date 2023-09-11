@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"home", pathMatch: "full"},
@@ -12,6 +13,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./produtos/produtos.module').then((m) => m.ProdutosModule),
   },
+  {path:'contato', component: ContactComponent},
   {path:'cart', component: CartComponent},
   {path:"**", component: PaginaNaoEncontradaComponent}
 ];

@@ -1,7 +1,6 @@
 .product-list {
   background: rgb(2,0,36);
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(35,35,35,1) 18%, rgb(61, 61, 61) 100%);  padding: 40px 0;
-  width: fit-content;
   display: flex;
   gap: 20px;
   flex-flow: row wrap;

@@ -6,9 +6,12 @@
             <h2 class="home-title">BIT Store</h2>
         </div>
     </div>
+    <h3 class="title-product">Nossos Produtos:</h3>
     <div class="home__container">
         <div class="home-products" *ngFor="let product of products">
-            <div class="product-image"><img [src]="product.image" alt="" width="130"></div>
+            <div class="product-image"><figure><img [src]="product.image" [alt]="product.description" width="130">
+            
+            </figure></div>
         </div>
         
     </div>

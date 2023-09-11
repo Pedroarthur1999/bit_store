@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-* {
+*,
+h1,
+h2,
+h3 {
   margin: 0;
   border: 0;
-  padding: 0;
 }
 :root {
   --blue: #2f0ad3;
@@ -12,24 +14,23 @@
   --dark-purple: #6941a8;
   --gray-blue: #425fad;
   --gray: #2e2e2e;
-  --dark-gray:#1f1f1f;
-  
+  --dark-gray: #1f1f1f;
 }
 /* Define o tamanho da fonte base para a tela padrão e telas menores */
 html {
   font-size: 65%; /* 65% da fonte padrão */
+  
 }
 
 /* Define o tamanho da fonte para o corpo do documento */
 body {
   font-size: 1.6rem; /* 1.6 rem = 16px (assumindo que 1rem é igual a 10px) */
-  overflow-x: hidden; 
-  width: 100vw;  
-
-  
+  overflow-x: hidden;
 }
-
-.container{
+button{
+  cursor: pointer;
+}
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,46 +38,39 @@ body {
 /* Aplique ajustes de tamanho da fonte para diferentes larguras de tela */
 @media (max-width: 480px) {
   html {
-    font-size: 56%; /* 58% da fonte padrão */
+    /* font-size: 56%; 58% da fonte padrão */
   }
-  body{
-    
-}
+  body {
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   html {
-    font-size: 58%; /* 60% da fonte padrão */
+    /* font-size: 58%; 60% da fonte padrão */
   }
-  body{
-    
-}
+  body {
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   html {
-    font-size: 60%; /* 62% da fonte padrão */
+    /* font-size: 60%; 62% da fonte padrão */
   }
-  body{
+  body {
     background-color: #363636;
-}
+  }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
-    html {
-      font-size: 62%; /* 62% da fonte padrão */
-    }
-    body{
-      
+  html {
+    /* font-size: 62%; 62% da fonte padrão */
   }
+  body {
   }
+}
 @media (min-width: 1281px) {
   html {
-    font-size: 65%; /* 65% da fonte padrão */
+    /* font-size: 65%; 65% da fonte padrão */
   }
-  body{
-    
+  body {
+  }
 }
-}
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
